@@ -25,15 +25,15 @@
             },
             colors: {
               navy: {
-                DEFAULT: "#1E293B", // Slate 800 - Soft Navy Slate
+                DEFAULT: "#1E293B", // Slate 800
                 light: "#334155",   // Slate 700
                 soft: "#475569",    // Slate 600
                 dark: "#0F172A",    // Slate 900
               },
               softblue: {
-                DEFAULT: "#0284C7", // Sky 600 - Aksen biru soft utama
+                DEFAULT: "#0284C7", // Sky 600
                 hover: "#0369A1",   // Sky 700
-                light: "#E0F2FE",   // Sky 100 - Highlight biru pastel
+                light: "#E0F2FE",   // Sky 100
               },
             },
           },
@@ -87,21 +87,27 @@
           >
             Mahasiswa S1 Sistem Informasi
           </span>
+          
           <h1 class="text-4xl md:text-6xl font-bold text-navy leading-tight">
             Halo, Saya Jessika Olivia
           </h1>
-          <p class="text-lg text-slate-600 max-w-2xl">
-            Halo! Saya <strong class="text-navy">Jessika Olivia</strong>.
-            Mahasiswa S1 Sistem Informasi Universitas Amikom Yogyakarta yang telah menyelesaikan semester 6. Memiliki ketertarikan pada bidang IT Project Management, Analisis Sistem, dan UI/UX Design. Berpengalaman mengerjakan proyek akademik dalam analisis kebutuhan pengguna, penyusunan dokumentasi sistem, serta perancangan UI/UX menggunakan metode Design Thinking. Mampu bekerja sama dalam tim dan memiliki semangat belajar.
-          </p>
+          
+          <!-- Paragraf Ringkas & Rapi -->
+          <div class="text-base md:text-lg text-slate-600 leading-relaxed text-justify md:text-left space-y-3 max-w-2xl">
+            <p>
+              Saya adalah mahasiswa S1 Sistem Informasi Universitas Amikom Yogyakarta yang telah menyelesaikan semester 6. Memiliki ketertarikan kuat pada bidang <strong class="text-navy">IT Project Management</strong>, <strong class="text-navy">Analisis Sistem</strong>, dan <strong class="text-navy">UI/UX Design</strong>.
+            </p>
+            <p>
+              Berpengalaman dalam analisis kebutuhan pengguna, penyusunan dokumentasi sistem, serta perancangan UI/UX menggunakan metode <em>Design Thinking</em>. Mampu bekerja sama dalam tim dan memiliki semangat belajar yang tinggi.
+            </p>
+          </div>
 
           <!-- Info Kontak Singkat -->
           <div
             class="flex flex-wrap justify-center md:justify-start gap-4 text-xs font-medium text-slate-500 pt-2"
           >
             <span class="flex items-center gap-1.5"
-              ><i class="fa-solid fa-location-dot text-softblue"></i> Banguntapan,
-              Bantul</span
+              ><i class="fa-solid fa-location-dot text-softblue"></i> Banguntapan, Bantul</span
             >
             <span class="flex items-center gap-1.5"
               ><i class="fa-solid fa-envelope text-softblue"></i>
@@ -111,7 +117,7 @@
 
           <!-- CTA Buttons -->
           <div
-            class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4"
+            class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-2"
           >
             <a
               href="#projects"
@@ -128,26 +134,29 @@
           </div>
         </div>
 
-        <!-- Avatar / Decorative Card -->
+        <!-- Avatar / Foto Profil Card -->
         <div class="w-full md:w-5/12 flex justify-center">
           <div
-            class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl bg-gradient-to-tr from-navy via-slate-800 to-softblue/80 p-1 shadow-2xl"
+            class="relative w-64 h-72 md:w-80 md:h-96 rounded-2xl bg-gradient-to-tr from-navy via-slate-800 to-softblue/80 p-1 shadow-2xl"
           >
             <div
               class="w-full h-full bg-white rounded-xl flex flex-col items-center justify-center p-6 text-center space-y-4"
             >
-              <div
-                class="w-24 h-24 rounded-full bg-slate-50 flex items-center justify-center border-2 border-softblue text-navy text-3xl font-bold shadow-inner"
-              >
-                JO
-              </div>
+              <!-- Elemen Foto Profil -->
+              <img
+                src="foto.png"
+                alt="Jessika Olivia"
+                class="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover border-2 border-softblue shadow-md"
+              />
+              
               <div>
                 <h3 class="font-bold text-navy text-lg">Jessika Olivia</h3>
                 <p class="text-xs text-slate-500">
                   Universitas Amikom Yogyakarta
                 </p>
               </div>
-              <div class="flex gap-2">
+              
+              <div class="flex gap-2 pt-1">
                 <span
                   class="px-2.5 py-1 bg-softblue-light text-[10px] font-semibold text-softblue rounded-full"
                   >UI/UX</span
